@@ -11,7 +11,7 @@ const Navber = () => {
   return (
     <>
       {/* ------------large------------ */}
-      <nav id="navber" className="hidden lg:block">
+      <nav id="navber" className="hidden lg:block font-poppins">
         <div className="container">
           <div className="navRow flex  justify-between items-center py-[27px]">
             <Link to={'/'} className="log">
@@ -41,12 +41,12 @@ const Navber = () => {
       </nav>
 
       {/* -------------mobile------------- */}
-      <nav id="navber" className=" lg:hidden mx-2">
+      <nav id="navber" className=" lg:hidden mx-2 font-poppins">
         <div className="navRow flex  justify-between items-center py-[27px]">
           <Link to={'/'} className="log">
             <img src={mobile_logo} alt="logo" />
           </Link>
-          <div className="Navsearch bg-bg h-9 rounded-[100px] px-4 flex items-center">
+          <div className="Navsearch bg-bg w-[200px] h-9 rounded-[100px] px-4 flex items-center">
             <CiSearch className="w-3.5 h-3.5 mr-1.5" />
             <input
               placeholder="Search in products..."

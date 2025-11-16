@@ -2,6 +2,7 @@
 @utility container {
   margin-inline: auto;
   max-width: 1296px;
+  /* min-width: 312px; */
 }
 
 @theme {
@@ -12,5 +13,5 @@
   --color-bg: #f8f8f8;
 
   /* ------------fonts */
-  --text-poppins: "Poppins", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
 }
