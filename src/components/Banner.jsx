@@ -33,7 +33,7 @@ const Banner = () => {
       </section>
 
       {/* --------------------Mobile part-------------------- */}
-      <section id="banner " className="lg:hidden ">
+      <section className="bannerM lg:hidden ">
         <div className="slider-container">
           <Slider {...settings}>
             <div>

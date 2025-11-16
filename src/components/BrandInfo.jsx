@@ -1,10 +1,13 @@
 import React from "react";
+import { GiReturnArrow } from "react-icons/gi";
+import { RiRefund2Line } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb";
+import { TfiWorld } from "react-icons/tfi";
 
 const BrandInfo = () => {
   return (
     <>
-      <section id="brand-info">
+      <section id="brand-info" className=" hidden lg:block ">
         <div className="container border border-border h-[98px] mt-[52px] mb-8 rounded-2xl flex justify-between items-center px-10 text-poppins">
           {/* -------------item-1------------- */}
           <div className="info_1 flex items-center gap-3 ">
@@ -22,8 +25,9 @@ const BrandInfo = () => {
           </div>
           {/* -------------item-2------------- */}
           <div className="info_1 flex items-center gap-3 ">
-            <div className="text-4xl text-primary">
-              <TbTruckDelivery />
+            <hr className="w-px h-12 bg-border border-0 " />
+            <div className="text-2xl text-primary">
+              <GiReturnArrow />
             </div>
             <div className="">
               <h3 className=" font-semibold text-primary text-[18px] ">
@@ -36,8 +40,9 @@ const BrandInfo = () => {
           </div>
           {/* -------------item-3------------- */}
           <div className="info_1 flex items-center gap-3 ">
-            <div className="text-4xl text-primary">
-              <TbTruckDelivery />
+            <hr className="w-px h-12 bg-border border-0 " />
+            <div className="text-2xl text-primary">
+              <TfiWorld />
             </div>
             <div className="">
               <h3 className=" font-semibold text-primary text-[18px] ">
@@ -50,8 +55,9 @@ const BrandInfo = () => {
           </div>
           {/* -------------item-4------------- */}
           <div className="info_1 flex items-center gap-3 ">
-            <div className="text-4xl text-primary">
-              <TbTruckDelivery />
+            <hr className="w-px h-12 bg-border border-0 " />
+            <div className="text-3xl text-primary">
+              <RiRefund2Line />
             </div>
             <div className="">
               <h3 className=" font-semibold text-primary text-[18px] ">
@@ -61,6 +67,50 @@ const BrandInfo = () => {
                 60 days return for any reason
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Mobile */}
+      <section id="brand-infoM" className="py-[52px] pl-6">
+        <h3 className=" font-semibold text-base text-primary text-poppins ">Nexton® always with you</h3>
+        <div className=" flex flex-wrap gap-3">
+          {/* -------------item-1------------- */}
+          <div className="info_1 flex items-center gap-6 ">
+            <div className="text-[20px] text-text">
+              <TbTruckDelivery />
+            </div>
+              <h3 className=" font-semibold text-text text-[14px] ">
+                Free shipping
+              </h3>
+          </div>
+          {/* -------------item-2------------- */}
+          <div className="info_1 flex items-center gap-2 ">
+            <div className="text-[15px] text-text">
+              <GiReturnArrow />
+            </div>
+              <h3 className=" font-semibold text-text text-[14px] ">
+                Very easy to return
+              </h3>
+          </div>
+          {/* -------------item-3------------- */}
+          <div className="info_1 flex items-center gap-2 ">
+            <div className="text-[20px] text-text">
+              <TfiWorld />
+            </div>
+              <h3 className=" font-semibold text-text text-[14px] ">
+                Fast delivery worldwide
+              </h3>
+          </div>
+          {/* -------------item-4------------- */}
+          <div className="info_1 flex items-center gap-2 ">
+            <div className="text-[20px] text-text">
+              <RiRefund2Line />
+            </div>
+              <h3 className=" font-semibold text-text text-[14px] ">
+                Refunds policy
+              </h3>
           </div>
         </div>
       </section>
